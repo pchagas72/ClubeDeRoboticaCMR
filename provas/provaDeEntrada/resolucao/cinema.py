@@ -1,20 +1,20 @@
 # recebe as idades
 
-idade1 = int(input(""))
-idade2 = int(input(""))
+idade1 = int(input("Digite a primeira idade: "))
+idade2 = int(input("Digite a segunda idade: "))
 
 # verifica a idade e preço
-l = [idade1, idade2]
-
+idades = [idade1, idade2]
 preco = 0
 
-# calcula valor
-for i in l:
-    if i <= 17:
+# Calcula valor dos ingressos
+for idade in idades:
+    if idade <= 17:
         preco += 20
-    elif i >= 18 and i <= 59:
+    elif idade >= 18 and idade <= 59:
         preco += 30
-    elif i >= 60:
+    elif idade >= 60:
         preco += 25
-#valor dos ingressos
+        
+# Printa o valor dos ingressos
 print(preco)

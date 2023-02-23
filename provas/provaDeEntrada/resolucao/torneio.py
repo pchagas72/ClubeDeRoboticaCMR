@@ -1,19 +1,19 @@
-l = [] # cria uma lista vazia para receber os inputs
+lista_de_inputs = [] # Cria uma lista vazia para receber os inputs
 
-for i in range(0,6): # recebe o input 6 vezes
-    g = input().upper()
-    l.append(g)
+for input_atual in range(0,6): # Recebe o input 6 vezes
+    resultado_da_partida = input(f"Digite o resultado da {input_atual+1} partida: ").upper()
+    lista_de_inputs.append(resultado_da_partida)
 
-v = l.count('V') # conta quantos Vs existem na lista l
+vitorias = lista_de_inputs.count('V') # Conta quantos Vs existem na lista de inputs
 
-# verificação do grupo
-if v == 6 or v == 5: 
+# Verificação do grupo
+if vitorias == 6 or vitorias == 5: 
     print(1)
     
-elif v == 3 or v == 4:
+elif vitorias == 3 or vitorias == 4:
     print(2)
 
-elif v == 1 or v == 2:
+elif vitorias == 1 or vitorias == 2:
     print(3)
     
 else:
