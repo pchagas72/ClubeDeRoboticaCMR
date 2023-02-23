@@ -1,1 +1,2 @@
-# ClubeDeRoboticaCMR
+# Clube de Robótica do CMR
+
