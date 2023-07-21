@@ -1,16 +1,15 @@
-def solve(n) -> float:
-    i: int = 2
-
+def solve(n: float) -> float:
+    i = 2
     while i * i <= n:
         if n % i != 0:
             i += 1
         else:
-            n: float = n / i
+            n = n / i
     return n
 
 
 def main() -> None:
-    inp: int = 600851475143
+    inp = 600851475143
     solve(inp)
 
 

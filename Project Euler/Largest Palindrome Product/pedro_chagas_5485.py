@@ -12,7 +12,7 @@ def update_largest_palindrom(produto, largest) -> int:
     return produto
 
 
-def solve() -> int:
+def solve() -> None:
     largest_palindrom: int = 0
     for first_product in range(100, 1000):
         for second_product in range(100, 1000):

@@ -9,7 +9,7 @@ def solve(limit: int) -> int:
     sum: int = 0
     value: int = 0
     counter: int = 0
-    while value < 4000000:
+    while value < limit:
         value = fibonacci(counter)
         if value % 2 == 0:
             sum += value
@@ -18,7 +18,7 @@ def solve(limit: int) -> int:
 
 
 def main() -> None:
-    limit: int = 4000000
+    limit = 4000000
     solve(limit)
 
 

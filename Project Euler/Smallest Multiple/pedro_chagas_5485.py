@@ -9,10 +9,10 @@ def solve(divisors_list: list[int]) -> int:
             return divisor
         divisor += step
 
-    return None
+    return 0
 
 
-def get_answers() -> (int, int):
+def get_answers() -> tuple[int, int]:
     test_answer = solve(divisors_test_list)
     final_answer = solve(divisors_final_list)
     print(f'The test answer is {test_answer}')
